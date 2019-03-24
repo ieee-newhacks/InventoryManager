@@ -22,8 +22,12 @@
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=NTR" rel="stylesheet">
         
         <style>
+            body{
+                background-color: rgba(0,0,0, 0.77);
+            }
             .row1, .row2, .row3, .row4{
                 text-align: center;
             }
@@ -34,9 +38,9 @@
                 display: inline-block;
                 vertical-align: top;
                 margin: 15px;
-                border-radius: 10px;
-                -webkit-border-radius: 10px;
-                -moz-border-radius: 10px;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
             }
             .box2, .box5, .box8, .box11{
                 height: 600px;
@@ -45,9 +49,9 @@
                 border: solid;
                 display: inline-block;
                 margin: 15px;
-                border-radius: 10px;
-                -webkit-border-radius: 10px;
-                -moz-border-radius: 10px;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
             }
             .box3, .box6, .box9, .box12{
                 height: 600px;
@@ -56,14 +60,20 @@
                 border: solid;
                 display: inline-block;
                 margin: 15px;
-                border-radius: 10px;
-                -webkit-border-radius: 10px;
-                -moz-border-radius: 10px;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
             }
             .name{
                 height: 100px;
                 width: 300px;
                 background-color: white;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                -webkit-border-top-left-radius: 20px;
+                -webkit-border-top-right-radius: 20px;
+                -moz-border-top-left-radius: 20px;
+                -moz-border-top-right-radius: 20px;
             }
             
             .image{
@@ -72,10 +82,16 @@
                 background-color: grey;
             }
             .bottom{
-              height: 200px;
-              width: 300px;
-              display: inline-block;
-              background-color: blue;
+                height: 200px;
+                width: 300px;
+                display: inline-block;
+                background-color: blue;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                -webkit-border-bottom-left-radius: 20px;
+                -webkit-border-bottom-right-radius: 20px;
+                -moz-border-bottom-left-radius: 20px;
+                -moz-border-bottom-right-radius: 20px;
             }
             .description{
                 height: 200px;
@@ -91,6 +107,56 @@
                 font-size: 13px;
                 float: right;
                 background-color: yellow;
+                border-bottom-right-radius: 20px;
+                -webkit-border-right-radius: 20px;
+                -moz-border-right-radius: 20px;
+            }
+            .header{
+                background-color: #320050;
+                text-align: center;
+                color: white;
+                font-family: 'NTR', sans-serif;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                -webkit-border-bottom-left-radius: 20px;
+                -webkit-border-bottom-right-radius: 20px;
+                -moz-border-bottom-left-radius: 20px;
+                -moz-border-bottom-right-radius: 20px;
+                width: 990px;
+                position: relative;
+                left: 250.19px;
+            }
+            .mens{
+                height: 50px;
+                background-color: #000082;
+                color: white;
+                border-radius: 25px;
+                -webkit-border-radius: 25px;
+                -moz-border-radius: 25px;
+                line-height: 50px;
+                width: 990px;
+                position: relative;
+                left: 250.19px;
+            }
+            .mens h3{
+                position: relative;
+                left: 50px;
+            }
+            .womens{
+                height: 50px;
+                background-color: #5F0000;
+                color: white;
+                border-radius: 25px;
+                -webkit-border-radius: 25px;
+                -moz-border-radius: 25px;
+                line-height: 50px;
+                width: 990px;
+                position: relative;
+                left: 250.19px;
+            }
+            .womens h3{
+                position: relative;
+                left: 50px;
             }
             h1{
               margin: 0;
@@ -102,12 +168,25 @@
               margin: 0;
               line-height: 2.5em;
             }
+            .description p{
+                position: relative;
+                left: 10px;
+            }
+            .stock p{
+                position: relative;
+                right: 15px;
+            }
         </style>
     </head>
     <body>
-        <h1>SYDE Order</h1>
+        <div class="header">
+            <h1>SYDE Order</h1>
+            <h4>Inventory Management</h4>
+        </div>
         <br><br>
-        <h3>Men's</h3>
+        <div class="mens">
+            <h3>Men's Clothing </h3>
+        </div>
         <br>
         <br>
         <div class="row1">
@@ -241,9 +320,11 @@
                 </div>
             </div>
         </div>
-        
+        <br><br>
         <!--------------------------------------------------------------->
-        <h3>Women's</h3>
+        <div class="womens">
+            <h3>Women's Clothing</h3>
+        </div>
         <br>
         <br>
         <div class="row3">
