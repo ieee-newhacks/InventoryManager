@@ -16,38 +16,38 @@ jeans = db.jeans
 shorts = db.shorts
 footwear = db.footwear
 
-
-@app.route('/index', methods=['GET'])
+@app.route('/',methods=['GET'])
+@app.route("/index", methods=['GET'])
 def home(): 
     # T-shirt Info
-    tshirt_stock = tshirt.distinct("CurrentStock")
-    tshirt_current = tshirt.distinct("CurrentMonthlySales")
-    tshirt_prev = tshirt.distinct("PrevMonthlySales")
+    tshirt_stock = tshirt.find({"CurrentStock":120})
+    tshirt_current = tshirt.find({"CurrentMonthlySales":80})
+    tshirt_prev = tshirt.find({"PrevMonthlySales":70})
 
     # Longsleeves Info
-    longsleeves_stock = longsleeves.distinct("CurrentStock")
-    longsleeves_current = longsleeves.distinct("CurrentMonthlySales")
-    longsleeves_prev = longsleeves.distinct("PrevMonthlySales")
+    longsleeves_stock = longsleeves.find({"CurrentStock":230})
+    longsleeves_current = longsleeves.find({"CurrentMonthlySales":70})
+    longsleeves_prev = longsleeves.find({"PrevMonthlySales":50})
 
     # Jackets Info
-    jackets_stock = jackets.distinct("CurrentStock")
-    jackets_current = jackets.distinct("CurrentMonthlySales")
-    jackets_prev = jackets.distinct("PrevMonthlySales")
+    jackets_stock = jackets.find({"CurrentStock":36})
+    jackets_current = jackets.find({"CurrentMonthlySales":13})
+    jackets_prev = jackets.find({"PrevMonthlySales":45})
 
     # Jeans Info
-    jeans_stock = jeans.distinct("CurrentStock")
-    jeans_current = jeans.distinct("CurrentMonthlySales")
-    jeans_prev = jeans.distinct("PrevMonthlySales")
+    jeans_stock = jeans.find({"CurrentStock":450})
+    jeans_current = jeans.find({"CurrentMonthlySales":195})
+    jeans_prev = jeans.find({"PrevMonthlySales":234})
 
     # Shorts Info
-    shorts_stock = shorts.distinct("CurrentStock")
-    shorts_current = shorts.distinct("CurrentMonthlySales")
-    shorts_prev = shorts.distinct("PrevMonthlySales")
+    shorts_stock = shorts.find({"CurrentStock":80})
+    shorts_current = shorts.find({"CurrentMonthlySales":35})
+    shorts_prev = shorts.find({"PrevMonthlySales":50})
 
     # Footwear Info
-    footwear_stock = footwear.distinct("CurrentStock")
-    footwear_current = footwear.distinct("CurrentMonthlySales")
-    footwear_prev = footwear.distinct("PrevMonthlySales")
+    footwear_stock = footwear.find({"CurrentStock":187})
+    footwear_current = footwear.find({"CurrentMonthlySales":55})
+    footwear_prev = footwear.find({"PrevMonthlySales":34})
 
     return render_template('index.html', tshirtStock = tshirt_stock, tshirtCurrent = tshirt_current, tshirtPrev = tshirt_prev, longsleevesStock = longsleeves_stock, longsleevesCurrent = longsleeves_current, longsleevesPrev = longsleeves_prev, jacketsStock = jackets_stock, jacketsCurrent = jackets_current, jacketsPrev = jackets_prev, jeansStock = jeans_stock, jeansCurrent = jeans_current, jeansPrev = jeans_prev, shortsStock = shorts_stock, shortsCurrent = shorts_current, shortsPrev = shorts_prev, footwearStock = footwear_stock, footwearCurrent = footwear_current, footwearPrev = footwear_prev)
 
