@@ -45,7 +45,6 @@
             .box2, .box5, .box8, .box11{
                 height: 600px;
                 width: 300px;
-                background-color: green;
                 border: solid;
                 display: inline-block;
                 margin: 15px;
@@ -56,7 +55,6 @@
             .box3, .box6, .box9, .box12{
                 height: 600px;
                 width: 300px;
-                background-color: red;
                 border: solid;
                 display: inline-block;
                 margin: 15px;
@@ -64,10 +62,21 @@
                 -webkit-border-radius: 20px;
                 -moz-border-radius: 20px;
             }
-            .name{
+            .name_mens{
                 height: 100px;
                 width: 300px;
-                background-color: white;
+                background-color: #000082;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                -webkit-border-top-left-radius: 20px;
+                -webkit-border-top-right-radius: 20px;
+                -moz-border-top-left-radius: 20px;
+                -moz-border-top-right-radius: 20px;
+            }
+            .name_womens{
+                height: 100px;
+                width: 300px;
+                background-color: #5F0000;
                 border-top-left-radius: 20px;
                 border-top-right-radius: 20px;
                 -webkit-border-top-left-radius: 20px;
@@ -79,13 +88,25 @@
             .image{
                 height: 300px;
                 width: 300px;
-                background-color: grey;
+                background-color: white;
             }
-            .bottom{
+            .bottom_mens{
                 height: 200px;
                 width: 300px;
                 display: inline-block;
-                background-color: blue;
+                background-color: #000082;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                -webkit-border-bottom-left-radius: 20px;
+                -webkit-border-bottom-right-radius: 20px;
+                -moz-border-bottom-left-radius: 20px;
+                -moz-border-bottom-right-radius: 20px;
+            }
+            .bottom_womens{
+                height: 200px;
+                width: 300px;
+                display: inline-block;
+                background-color: #5F0000;
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
                 -webkit-border-bottom-left-radius: 20px;
@@ -106,7 +127,6 @@
                 text-align: right;
                 font-size: 13px;
                 float: right;
-                background-color: yellow;
                 border-bottom-right-radius: 20px;
                 -webkit-border-right-radius: 20px;
                 -moz-border-right-radius: 20px;
@@ -124,7 +144,7 @@
                 -moz-border-bottom-right-radius: 20px;
                 width: 990px;
                 position: relative;
-                left: 250.19px;
+                left: 12.8%;
             }
             .mens{
                 height: 50px;
@@ -136,7 +156,7 @@
                 line-height: 50px;
                 width: 990px;
                 position: relative;
-                left: 250.19px;
+                left: 12.8%;
             }
             .mens h3{
                 position: relative;
@@ -152,29 +172,44 @@
                 line-height: 50px;
                 width: 990px;
                 position: relative;
-                left: 250.19px;
+                left: 12.8%;
             }
             .womens h3{
                 position: relative;
                 left: 50px;
             }
             h1{
-              margin: 0;
+                margin: 0;
+                font-size: 70px;
+            }
+            h2{
+                margin: 0;
+                line-height: 100px;
+                text-align: center;
+                color: white;
             }
             h3{
-              margin: 0;
+                margin: 0;
+            }
+            h4{
+                margin: 0;
+                font-size: 23px;
             }
             p{
               margin: 0;
-              line-height: 2.5em;
+              line-height: 2.6em;
+              font-size: 14px;
+              color: white;
             }
             .description p{
                 position: relative;
                 left: 10px;
+                color: white;
             }
             .stock p{
                 position: relative;
                 right: 15px;
+                color: white;
             }
         </style>
     </head>
@@ -191,11 +226,12 @@
         <br>
         <div class="row1">
             <div class="box1">
-                <div class="name">
+                <div class="name_mens">
+                    <h2>T-Shirts</h2>
                 </div>
                 <div class="image">
                 </div>
-                <div class="bottom">
+                <div class="bottom_mens">
                     <div class="description">
                         <p>Inventory: </p>
                         <p>Last Month's Sales: </p>
@@ -213,43 +249,49 @@
                 </div>
             </div>
             <div class="box2">
-                <div class="name">
+                <div class="name_mens">
+                    <h2>Long Sleeves</h2>
                 </div>
                 <div class="image">
                 </div>
-                <div class="description">
-                    <p>Inventory: </p>
-                    <p>Last Month's Sales: </p>
-                    <p>Current Month's Sales: </p>
-                    <p>Sales Trend: </p>
-                    <p>Reccommended Restock Quantity: </p>
-                </div>
-                <div class="stock">
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
+                <div class="bottom_mens">
+                    <div class="description">
+                        <p>Inventory: </p>
+                        <p>Last Month's Sales: </p>
+                        <p>Current Month's Sales: </p>
+                        <p>Sales Trend: </p>
+                        <p>Reccommended Restock Quantity: </p>
+                    </div>
+                    <div class="stock">
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                    </div>
                 </div>
             </div>
             <div class="box3">
-                <div class="name">
+                <div class="name_mens">
+                    <h2>Jackets</h2>
                 </div>
                 <div class="image">
                 </div>
-                <div class="description">
-                    <p>Inventory: </p>
-                    <p>Last Month's Sales: </p>
-                    <p>Current Month's Sales: </p>
-                    <p>Sales Trend: </p>
-                    <p>Reccommended Restock Quantity: </p>
-                </div>
-                <div class="stock">
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
+                <div class="bottom_mens">
+                    <div class="description">
+                        <p>Inventory: </p>
+                        <p>Last Month's Sales: </p>
+                        <p>Current Month's Sales: </p>
+                        <p>Sales Trend: </p>
+                        <p>Reccommended Restock Quantity: </p>
+                    </div>
+                    <div class="stock">
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -258,11 +300,12 @@
         <br>
         <div class="row2">
             <div class="box4">
-                <div class="name">
+                <div class="name_mens">
+                    <h2>Jeans</h2>
                 </div>
                 <div class="image">
                 </div>
-                <div class="bottom">
+                <div class="bottom_mens">
                     <div class="description">
                         <p>Inventory: </p>
                         <p>Last Month's Sales: </p>
@@ -280,45 +323,50 @@
                 </div>
             </div>
             <div class="box5">
-                <div class="name">
+                <div class="name_mens">
+                    <h2>Shorts</h2>
                 </div>
                 <div class="image">
                 </div>
-                <div class="description">
-                    <p>Inventory: </p>
-                    <p>Last Month's Sales: </p>
-                    <p>Current Month's Sales: </p>
-                    <p>Sales Trend: </p>
-                    <p>Reccommended Restock Quantity: </p>
-                </div>
-                <div class="stock">
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
+                <div class="bottom_mens">
+                    <div class="description">
+                        <p>Inventory: </p>
+                        <p>Last Month's Sales: </p>
+                        <p>Current Month's Sales: </p>
+                        <p>Sales Trend: </p>
+                        <p>Reccommended Restock Quantity: </p>
+                    </div>
+                    <div class="stock">
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                    </div>
                 </div>
             </div>
             <div class="box6">
-                <div class="name">
+                <div class="name_mens">
+                    <h2>Shoes</h2>
                 </div>
                 <div class="image">
                 </div>
-                <div class="description">
-                    <p>Inventory: </p>
-                    <p>Last Month's Sales: </p>
-                    <p>Current Month's Sales: </p>
-                    <p>Sales Trend: </p>
-                    <p>Reccommended Restock Quantity: </p>
+                <div class="bottom_mens">
+                    <div class="description">
+                        <p>Inventory: </p>
+                        <p>Last Month's Sales: </p>
+                        <p>Current Month's Sales: </p>
+                        <p>Sales Trend: </p>
+                        <p>Reccommended Restock Quantity: </p>
+                    </div>
+                    <div class="stock">
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                    </div>
                 </div>
-                <div class="stock">
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
-                </div>
-            </div>
         </div>
         <br><br>
         <!--------------------------------------------------------------->
@@ -329,11 +377,12 @@
         <br>
         <div class="row3">
             <div class="box7">
-                <div class="name">
+                <div class="name_womens">
+                    <h2>T-Shirts</h2>
                 </div>
                 <div class="image">
                 </div>
-                <div class="bottom">
+                <div class="bottom_womens">
                     <div class="description">
                         <p>Inventory: </p>
                         <p>Last Month's Sales: </p>
@@ -351,43 +400,49 @@
                 </div>
             </div>
             <div class="box8">
-                <div class="name">
+                <div class="name_womens">
+                    <h2>Long Sleeves</h2>
                 </div>
                 <div class="image">
                 </div>
-                <div class="description">
-                    <p>Inventory: </p>
-                    <p>Last Month's Sales: </p>
-                    <p>Current Month's Sales: </p>
-                    <p>Sales Trend: </p>
-                    <p>Reccommended Restock Quantity: </p>
-                </div>
-                <div class="stock">
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
+                <div class="bottom_womens">
+                    <div class="description">
+                        <p>Inventory: </p>
+                        <p>Last Month's Sales: </p>
+                        <p>Current Month's Sales: </p>
+                        <p>Sales Trend: </p>
+                        <p>Reccommended Restock Quantity: </p>
+                    </div>
+                    <div class="stock">
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                    </div>
                 </div>
             </div>
             <div class="box9">
-                <div class="name">
+                <div class="name_womens">
+                    <h2>Jackets</h2>
                 </div>
                 <div class="image">
                 </div>
-                <div class="description">
-                    <p>Inventory: </p>
-                    <p>Last Month's Sales: </p>
-                    <p>Current Month's Sales: </p>
-                    <p>Sales Trend: </p>
-                    <p>Reccommended Restock Quantity: </p>
-                </div>
-                <div class="stock">
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
+                <div class="bottom_womens">
+                    <div class="description">
+                        <p>Inventory: </p>
+                        <p>Last Month's Sales: </p>
+                        <p>Current Month's Sales: </p>
+                        <p>Sales Trend: </p>
+                        <p>Reccommended Restock Quantity: </p>
+                    </div>
+                    <div class="stock">
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -396,11 +451,12 @@
         <br>
         <div class="row4">
             <div class="box10">
-                <div class="name">
+                <div class="name_womens">
+                    <h2>Jeans</h2>
                 </div>
                 <div class="image">
                 </div>
-                <div class="bottom">
+                <div class="bottom_womens">
                     <div class="description">
                         <p>Inventory: </p>
                         <p>Last Month's Sales: </p>
@@ -418,43 +474,49 @@
                 </div>
             </div>
             <div class="box11">
-                <div class="name">
+                <div class="name_womens">
+                    <h2>Skirts</h2>
                 </div>
                 <div class="image">
                 </div>
-                <div class="description">
-                    <p>Inventory: </p>
-                    <p>Last Month's Sales: </p>
-                    <p>Current Month's Sales: </p>
-                    <p>Sales Trend: </p>
-                    <p>Reccommended Restock Quantity: </p>
-                </div>
-                <div class="stock">
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
+                <div class="bottom_womens">
+                    <div class="description">
+                        <p>Inventory: </p>
+                        <p>Last Month's Sales: </p>
+                        <p>Current Month's Sales: </p>
+                        <p>Sales Trend: </p>
+                        <p>Reccommended Restock Quantity: </p>
+                    </div>
+                    <div class="stock">
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                    </div>
                 </div>
             </div>
             <div class="box12">
-                <div class="name">
+                <div class="name_womens">
+                    <h2>Shoes</h2>
                 </div>
                 <div class="image">
                 </div>
-                <div class="description">
-                    <p>Inventory: </p>
-                    <p>Last Month's Sales: </p>
-                    <p>Current Month's Sales: </p>
-                    <p>Sales Trend: </p>
-                    <p>Reccommended Restock Quantity: </p>
-                </div>
-                <div class="stock">
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
-                    <p>#</p>
+                <div class="bottom_womens">
+                    <div class="description">
+                        <p>Inventory: </p>
+                        <p>Last Month's Sales: </p>
+                        <p>Current Month's Sales: </p>
+                        <p>Sales Trend: </p>
+                        <p>Reccommended Restock Quantity: </p>
+                    </div>
+                    <div class="stock">
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                        <p>#</p>
+                    </div>
                 </div>
             </div>
         </div>
