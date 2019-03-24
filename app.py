@@ -40,7 +40,7 @@ def home():
     #Footwear Info
     footwear = [78, 56, 91]
     sales_trend_footwear = (footwear[1] - footwear[2]) / footwear[2] * 100
-    reco_footwear_qty = (footwear[1] - footwear[0]) + 20
+    reco_footwear_qty = (footwear[1] - footwear[0]) + 25
 
     # WOMEN's Database
 
