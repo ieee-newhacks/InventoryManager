@@ -35,5 +35,5 @@ Paste the given localhost domain into your browser. You are all set! :sunglasses
 ## What is SYDE Order? 
 SYDE Order is a simple web app that simulates a seamless experience for potential retailers to organize and manage their inventory more effectively by offering them easy-to-read data regarding their current inventory, sales trends, and recommended restock quantities of certain items. The main goal here is to make their business more sustainable and develop a habit of making accurate restocks to avoid wasteful overstocking and maximizing profits. 
 
-###Team
+### Team
 [Daniel Kim](https://github.com/dannyhkim), [Seth Villaruz Morenos](https://github.com/DraconianWing), and [Kha Nguyen](https://github.com/Nguyen-Kha) developed this project together. Daniel's role was to implement the dynamic back-end elements of the app using Flask App, as well develop some of the front-end interface in HTML & CSS. Seth was in charge of the UI/UX Design of the app which he created in Figma, and Kha was the main front-end developer who transitioned the Figma designs into HTML/CSS code. 
