@@ -60,7 +60,7 @@ def home():
     wreco_jackets_qty = (wjackets[1] - wjackets[0]) + 20
 
     #W Jeans Info
-    wjeans = [205, 150, 147]
+    wjeans = [134, 150, 147]
     wsales_trend_jeans = (wjeans[1] - wjeans[2]) / wjeans[2] * 100
     wreco_jeans_qty = (wjeans[1] - wjeans[0]) + 20
 
@@ -70,7 +70,7 @@ def home():
     wreco_skirts_qty = (wskirts[1] - wskirts[0]) + 20
 
     #W Footwear Info
-    wfootwear = [145, 78, 94]
+    wfootwear = [65, 78, 94]
     wsales_trend_footwear = (wfootwear[1] - wfootwear[2]) / wfootwear[2] * 100
     wreco_footwear_qty = (wfootwear[1] - wfootwear[0]) + 20
 
