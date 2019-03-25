@@ -37,3 +37,5 @@ SYDE Order is a simple web app that simulates a seamless experience for potentia
 
 ### Team
 [Daniel Kim](https://github.com/dannyhkim), [Seth Villaruz Morenos](https://github.com/DraconianWing), and [Kha Nguyen](https://github.com/Nguyen-Kha) developed this project together. Daniel's role was to implement the dynamic back-end elements of the app using Flask App, as well develop some of the front-end interface in HTML & CSS. Seth was in charge of the UI/UX Design of the app which he created in Figma, and Kha was the main front-end developer who transitioned the Figma designs into HTML/CSS code. 
+
+![SYDE Order](sydeorder.png)
