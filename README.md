@@ -30,7 +30,7 @@ After installing the packages, navigate to your local directory in the terminal 
 $ export FLASK_APP=app.py
 $ flask run
 ```
-Paste the given localhost domain into your browser. You are all set!
+Paste the given localhost domain into your browser. You are all set! :sunglasses:
 
 ## What is SYDE Order? 
 SYDE Order is a simple web app that simulates a seamless experience for potential retailers to organize and manage their inventory more effectively by offering them easy-to-read data regarding their current inventory, sales trends, and recommended restock quantities of certain items. The main goal here is to make their business more sustainable and develop a habit of making accurate restocks to avoid wasteful overstocking and maximizing profits. 
